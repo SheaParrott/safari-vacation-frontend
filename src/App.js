@@ -55,7 +55,6 @@ class App extends Component {
         <h4>Here are all the animals you seen in the jungle</h4>
         <button onClick={this.GetAnimalsSeenInJungle}>submit</button>
         {this.showAllAnimalsSeenInJungle()}
-        <h1>wtf why is this not working</h1>
       </div>
     )
   }
