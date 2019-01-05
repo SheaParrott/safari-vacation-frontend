@@ -92,7 +92,7 @@ class App extends Component {
       )
     })
   }
-  deleteAllDesertAnimals = () => {
+  removeAllDesertAnimals = () => {
     // console.log(this.state.allAnimals[0].location_of_last_seen)
     let animalsWithoutDesert = this.state.allAnimals.filter(
       removeDesertAnimals => {
@@ -128,7 +128,7 @@ class App extends Component {
             Since the desert was not your favorite part of the tour. Click the
             button below to remove them from your list above.
           </h4>
-          <button onClick={this.deleteAllDesertAnimals}>submit</button>
+          <button onClick={this.removeAllDesertAnimals}>submit</button>
           <h4>All the animals you saw in the jungle:</h4>
           {this.showAllAnimalsSeenInJungle()}
         </div>
