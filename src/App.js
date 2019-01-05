@@ -11,6 +11,7 @@ import banner from './images/banner.jpg'
 // [x] Remove all animals that I have seen in the Desert.
 //    - done this through state manipulation
 //    - this will ensure you can still see all animals seen if desired
+//    - did create a new end point in api to do this now, however for design purposes I am choosing not to use this option
 // [x] Add all the CountOfTimesSeen and get a total number of animals seen
 // [x]Get the CountOfTimesSeen of lions, tigers and bears
 
