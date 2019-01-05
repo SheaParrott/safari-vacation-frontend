@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import axios from 'axios'
+import banner from './images/banner.jpg'
 
 // [x] Finish all the endpoints from the Safari API
 // [x] Create a simple react app, that uses some css make it looks friendly.
@@ -107,23 +108,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Safari Vacation</h1>
-        <h4>
-          Did you have a fun time on the Safari tour? I sure hope so. Here is a
-          list of the animals you seen on the tour! You saw{' '}
-          {this.state.numberOfAnimalsSeen.total_count_of_times_seen} animals on
-          this tour.{' '}
-          {this.state.numberOfLionsTigersAndBears.total_count_of_times_seen_LTB}{' '}
-          of these were Lions, Tigers and Bears.
-        </h4>
-        {this.showAnimals()}
-        <h4>
-          Since the desert was not your favorite part of the tour. Click the
-          button below to remove them from your list above.
-        </h4>
-        <button onClick={this.deleteAllDesertAnimals}>submit</button>
-        <h4>All the animals you saw in the jungle:</h4>
-        {this.showAllAnimalsSeenInJungle()}
+        <header>
+          <h1>Safari Vacation</h1>
+        </header>
+        <div className="page">
+          <h4>
+            Did you have a fun time on the Safari tour? I sure hope so. Here is
+            a list of the animals you seen on the tour! You saw{' '}
+            {this.state.numberOfAnimalsSeen.total_count_of_times_seen} animals
+            on this tour.{' '}
+            {
+              this.state.numberOfLionsTigersAndBears
+                .total_count_of_times_seen_LTB
+            }{' '}
+            of these were Lions, Tigers and Bears.
+          </h4>
+          {this.showAnimals()}
+          <h4>
+            Since the desert was not your favorite part of the tour. Click the
+            button below to remove them from your list above.
+          </h4>
+          <button onClick={this.deleteAllDesertAnimals}>submit</button>
+          <h4>All the animals you saw in the jungle:</h4>
+          {this.showAllAnimalsSeenInJungle()}
+        </div>
       </div>
     )
   }
