@@ -10,7 +10,7 @@ html {
 .App {
   text-align: center;
   text-transform: uppercase;
-  height: 100vh;
+  min-height: 100vh;
 }
 header {
   background-image: url(./images/banner.jpg);
